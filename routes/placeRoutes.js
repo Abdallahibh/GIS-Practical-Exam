@@ -1,6 +1,6 @@
-
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+
 const {
   createPlace,
   getPlaces,
@@ -8,15 +8,17 @@ const {
   updatePlace,
   deletePlace,
   getNearbyPlaces,
-  getDistanceToPlace
-} = require('../controllers/placeController');
+  getDistanceToPlace,
+  searchNearbyPlaces,
+} = require("../controllers/placeController");
 
-router.post('/', createPlace);
-router.get('/', getPlaces);
-router.get('/:id', getPlaceById);
-router.put('/:id', updatePlace);
-router.delete('/:id', deletePlace);
-router.get('/nearby/search', getNearbyPlaces);
-router.get('/:id/distance', getDistanceToPlace);
+router.post("/", createPlace);
+router.get("/", getPlaces);
+router.get("/:id", getPlaceById);
+router.put("/:id", updatePlace);
+router.delete("/:id", deletePlace);
+router.get("/nearby/search", getNearbyPlaces);
+router.get("/:id/distance", getDistanceToPlace);
+router.get("/google/search", searchNearbyPlaces);
 
 module.exports = router;
