@@ -117,7 +117,7 @@ exports.getDistanceToPlace = async (req, res) => {
         $geoNear: {
           near: userLocation,
           distanceField: "dist.calculated",
-          key: "_id",
+          key: "location",
           spherical: true,
           query: { _id: place._id },
         },
