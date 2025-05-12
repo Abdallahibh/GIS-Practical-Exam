@@ -6,4 +6,5 @@
 
 # All End-Points
 
-![image](https://github.com/user-attachments/assets/3dec69ad-b00e-4848-97be-e5971ba1b297)
+![image](https://github.com/user-attachments/assets/d4e9deac-c7ff-4da9-af2a-d3da1cc821ce)
+
